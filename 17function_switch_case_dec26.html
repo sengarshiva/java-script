@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function groceryprice(exp)
+        {
+            switch(exp)
+            { 
+                case 'cookies':
+                    console.log('cookies cost 100 rupees');
+                    break;
+
+                case 'milk':
+                    console.log('milk cost 60 rupees');
+                    break; 
+                    
+                case 'fruits':
+                    console.log('fruits cost 400 rupees');
+                    break;
+                     
+                case 'corn flakes':
+                   console.log('corn flakes cost 200 rupees');
+                    break;
+                    
+                 default: 
+                 console.log(exp + 'is not available right now');  
+            }
+        }
+
+        groceryprice('cookies');
+        // output: cookies cost 100 rupees
+
+        groceryprice('fruits');
+        //output: fruits cost 400 rupees
+
+        groceryprice('peanut');
+        //output: peanut is not available right now
+    </script>
+</body>
+</html>

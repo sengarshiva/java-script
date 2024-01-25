@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container"><br>
+        <div class="col-md-6 m-auto d-block">
+            <form onsubmit="return validation()" class="bg-light">
+
+                <div class="mb-3">
+                    <label for="user" class="font-weight-bold">username:</label>
+                    <input type="text" name="usre" class="form-control" id="user" autocomplete="off" required>
+                    <span id="username" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="font-weight-bold">password:</label>
+                    <input type="text" name="pass" class="form-control" id="pass" autocomplete="off">
+                    <span id="password" class="text-danger font-weight-bold"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="user" class="font-weight-bold">confirm password:</label>
+                    <input type="text" name="usre" class="form-control" id="conpass" autocomplete="off" required>
+                    <span id="cpassword" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="font-weight-bold">moblile number:</label>
+                    <input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+                    <span id="mobileno" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <input type="submit" name="submit" value="submit" class="btn btn-success" autocomplete="off">
+
+
+                <script>
+                    function validation() {
+                        let user = document.getElementById('user').value;
+                        //console.log(user)
+                        var pass = document.getElementById('pass').value;
+                        var confirm = document.getElementById('conpass').value;
+                        var mobileNumber = document.getElementById('moblienumber').value;
+
+                        if ((user.length <= 2) || (user.length > 20)) {
+                            document.getElementById('username').innerHTML = " ** username length must be between 2 and 20";
+                            return false;
+                        }
+                        if (!isNaN(user)) {
+                            document.getElementById('username').innerHTML = " ** only characters are allowed";
+                            return false;
+                        }
+                        if (pass == "") {
+                            document.getElementById('password').innerHTML = "** plese fill the password field";
+                            return false;
+
+                        }
+                        if ((pass.lenght <= 10) || (pass.lenght > 20)) {
+                            document.getElementById('password').innerHTML = "** password length must be between 10 and 20";
+                            return false;
+                        }
+                        
+                        if (pass != cpass){
+                            document.getElementById('cpassword').innerHTML ="** password does not match the confirm password";
+                            return false
+                        }
+                        if(isNaN(mobileNumber)){
+                            document.getElementById('mobileno').innerHTML ="** user must write digits only not charcters";
+                            return false;
+                        }
+                        if(mobileNumber.lenght!=10){
+                            document.getElementById('mobileno').innerHTML ="** mobile number must be 10 digits only";
+                            return false;
+                        }
+                    }
+                </script>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

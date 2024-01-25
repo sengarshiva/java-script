@@ -1,0 +1,133 @@
+.weblogo{
+    width: 65px;
+} 
+.navbar{
+    background: #00000082!important;
+    position: fixed;
+    
+}
+.navbar-nav li{ 
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: fff!important;
+    font-size: 15px;
+    font-weight: 600;
+  
+    
+}
+.moblogo{
+    display: none;
+}
+.a{
+  text-align: center!important;
+    font-size: 90px;
+    font-family: pargue;
+    margin-top: 230px;
+    color: white;
+
+}
+.img123{
+    width: 100%;
+}
+.abc{
+    background: url(https://pn-paul.netlify.app/image/ourimage.jpg );
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+.b{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'pargue';
+    letter-spacing: 1px;
+
+
+}
+.c{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    padding-right: 5px;
+    text-align: justify;
+}
+.aaa{
+    background: url(https://pn-paul.netlify.app/image/gamebanner.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+
+}
+.d{
+    color: white;
+    text-align: center!important;
+    margin-top: 130px;
+    
+}
+.E{
+    line-height: 40px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+   color: white;
+   font-weight: lighter;
+
+}.f{
+    text-align: center!important;
+    font-family: 'pargue';
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+
+@media(max-width:768px)
+{
+    .img123{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .moblogo{
+        display: block;
+    }
+    .weblogo{
+        display: none;
+    }
+    .navbar{
+        background: #fec322!important;
+    }
+}
+.g{
+    line-height: 40px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-right: 5px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.h{
+    text-align: center!important;
+    font-family: 'pargue';
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+.i{
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-right: 5px;
+    text-align: justify;
+}
+.j{
+    padding: 20px;
+    font-family: 'pargue';
+    letter-spacing: 3px;
+}
+.k{
+    line-height: 30px;
+    word-spacing: 1px;
+    font-size: 18px;
+    color: aliceblue;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ages =[8,7,10,15];
+        // var ages =[5,4,3,3,2,1]
+        //document.write(ages +"<br><br>");
+
+        var b =ages.every(checkAdult);            /// every method only ckeck karega ki value true hai ya false.
+        // var b =ages.findIndex(chackAdult);
+
+        document.write(b + "<br><br>");  
+        function checkAdult(age)
+        {
+            return age>=6
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

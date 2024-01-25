@@ -1,0 +1,64 @@
+.weblogo{
+    width: 65px;
+}
+.navbar{
+    background: #00000082!important;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: fff!important;
+    font-size: 15px;
+    font-weight: 600;
+}
+.moblogo{
+    display: none;
+}
+@media(max-width:768px)
+{
+    .img123{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .moblogo{
+        display: block;
+    }
+    .weblogo{
+        display: none;
+    }
+    .navbar{
+        background: #fec322!important;
+    }
+}
+.abc{
+    background: url(https://pn-paul.netlify.app/image/CONTACT-US.jpg);
+    height: 620px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.a{
+    text-align: center!important;
+    font-size: 55px;
+    font-family: pargue;
+    margin-top: 290px;
+    color: white;
+}
+.b{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: unset;
+    margin-top: 40px;
+}
+.j{
+    padding: 20px;
+    font-family: 'pargue';
+    letter-spacing: 3px;
+}
+.k{
+    line-height: 30px;
+    word-spacing: 1px;
+    font-size: 18px;
+    color: aliceblue;
+}

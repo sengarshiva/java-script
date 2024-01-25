@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = {
+            fname: 'shiva', 
+            lname: 'sengar',
+            age: 23,
+            email: 'shivasenfgar08@gmail.com',
+
+            favmovies: ['dhoom', 'sholay', 'hum'],  //object array
+
+            //ek or object ke ander object//
+
+            living: {
+                city: 'gwalior',
+                country: 'india'
+            },
+
+            salary: function () {
+                return 25000;
+            },
+
+            fullname: function () {
+                fname = "raj"
+
+                // return this.fname +" "+ this.lname;  //(var a ke liye this use)
+
+                return this.fname
+            }
+
+        }  //end object//
+
+        //document.write(a);
+        //document.write(a.fname);
+         document.write(a.favmovies);
+        // document.write(a.salary());
+        // document.write(a.fullname());
+        // document.write(a.living.city);
+        // document.write(a.living.city);
+        // document.write(JSON.stringify(a)) // object ko string m change krne k liye (JSON.stringify) ka use krte hai.
+        // object kbhi browser pr run nahi hota.
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

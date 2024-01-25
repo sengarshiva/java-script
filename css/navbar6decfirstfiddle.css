@@ -1,0 +1,14 @@
+.weblogo{
+    width: 65px;
+}
+.navbar{ 
+    background: #00000082!important;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: fff!important; 
+    font-size: 20px;
+    font-weight: 600;
+}
